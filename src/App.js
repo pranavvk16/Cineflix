@@ -25,11 +25,11 @@ function App() {
     console.log(image);
   }
   const cardcontent = () => {
-    return (<div className="card">
+    return (<a href={url}><div className="card">
       <div className="poster"><img src={imgurl} alt="poster" /></div>
       <h3>{result.Title}</h3>
-      <button className="watchnow"><a href={url}>Play</a></button>
-    </div>)
+      
+    </div></a>)
   }
 
   return (
