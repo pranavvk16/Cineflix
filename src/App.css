@@ -51,10 +51,14 @@ input {
 }
 .poster {
   width: 100%;
-  height: 90%;  
+  height: 90%;
   margin-bottom: 3%;
 }
 img {
   width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
