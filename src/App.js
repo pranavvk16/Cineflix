@@ -10,7 +10,7 @@ function App() {
   const [image, getimage] = useState("")
 
   let url = `https://vidclouds.us/${iD}.html`
-  let imgurl = `http://img.omdbapi.com/?i=${iD}&apikey=35a08f2c`
+  let imgurl=`http://img.omdbapi.com/?i=${iD}&apikey=35a08f2c`
   const thecall = async (querry) => {
     const response = await axios.get(`https://www.omdbapi.com/?t=${querry.split(" ").join("+")}&apikey=35a08f2c`);
 
@@ -28,7 +28,7 @@ function App() {
     return (<a href={url}><div className="card">
       <div className="poster"><img src={imgurl} alt="poster" /></div>
       <h3>{result.Title}</h3>
-
+      
     </div></a>)
   }
 
